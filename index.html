@@ -1,173 +1,187 @@
-/* ===== THEME VARIABLES ===== */
-:root {
-    --bg-gradient: linear-gradient(135deg, #f5f9ff, #ffffff);
-    --text-color: #2c2c2c;
-    --card-bg: #ffffff;
-    --accent: #4a90e2;
-    --skills-bg: #f9fbff;
-    --footer-bg: #1f2937;
-    --footer-text: #e5e7eb;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sophia Sagayanathan | Data Analyst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-[data-theme="dark"] {
-    --bg-gradient: linear-gradient(135deg, #0f172a, #1e293b);
-    --text-color: #f1f5f9;
-    --card-bg: #1e293b;
-    --accent: #60a5fa;
-    --skills-bg: #0f172a;
-    --footer-bg: #0f172a;
-    --footer-text: #cbd5e1;
-}
+<body>
 
-/* ===== GLOBAL ===== */
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: var(--bg-gradient);
-    color: var(--text-color);
-    transition: all 0.3s ease;
-    line-height: 1.7;
-}
+<header>
+    <h1>Sophia Sagayanathan</h1>
+    <p class="subtitle">Data Analyst</p>
+</header>
 
-section {
-    padding: 100px 10%;
-}
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Data Analyst with strong foundations in Machine Learning,
+        Time Series Forecasting, and Business Intelligence. I specialize in building
+        predictive models and analytical dashboards using Python, Power BI,
+        Excel, and MongoDB.
+    </p>
+</section>
 
-h1, h2, h3 {
-    font-family: 'Space Grotesk', sans-serif;
-    margin-top: 0;
-}
+<section class="projects">
+    <h2>Projects</h2>
 
-h2::after {
-    content: "";
-    width: 60%;
-    height: 3px;
-    background: var(--accent);
-    display: block;
-    margin-top: 8px;
-}
+    <!-- Featured Project -->
+    <div class="project featured">
+        <img src="images/home page -agri.jpeg" alt="Agri Project">
+        <div class="project-content">
+            <h3>Agri Price Prediction System</h3>
+            <p class="tech">Python | ARIMA | SARIMA | XGBoost</p>
+            <p>
+                A Machine Learning-based forecasting system that predicts
+                agri-horticultural commodity prices using multiple time series models.
+                Includes multi-crop forecasting, top gainers & losers, government schemes,
+                weather insights, and map visualization for highest crop grown regions
+                across India and Tamil Nadu.
+            </p>
+            <a href="https://github.com/Sophia-sagayanathan" target="_blank" class="btn">
+                View on GitHub
+            </a>
+        </div>
+    </div>
 
-/* ===== HEADER ===== */
-header {
-    text-align: center;
-    padding: 70px 20px 50px;
-}
+    <!-- Other Projects -->
 
-.subtitle {
-    color: var(--accent);
-}
+    <div class="project">
+        <img src="images/Confusion matrix.png" alt="Hospital Bed Project">
+        <div class="project-content">
+            <h3>Hospital Bed Demand Classification</h3>
+            <p class="tech">Python | Scikit-learn | Random Forest</p>
+            <p>
+                Supervised classification model to predict hospital bed demand
+                levels using healthcare metrics. Evaluated using confusion matrix
+                and classification report.
+            </p>
+            <a href="https://github.com/Sophia-sagayanathan" target="_blank" class="btn">
+                View on GitHub
+            </a>
+        </div>
+    </div>
 
-/* ===== ABOUT ===== */
-.about {
-    background: var(--card-bg);
-    margin: 60px 10%;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
-}
+    <div class="project">
+        <img src="images/customer segmentaation-page 1.png" alt="Customer Segmentation">
+        <div class="project-content">
+            <h3>Customer Segmentation Dashboard</h3>
+            <p class="tech">Power BI</p>
+            <p>
+                Interactive dashboard focused on customer grouping,
+                segmentation analysis, and behavioral insights using dynamic slicers.
+            </p>
+            <a href="https://github.com/Sophia-sagayanathan" target="_blank" class="btn">
+                View on GitHub
+            </a>
+        </div>
+    </div>
 
-/* ===== PROJECTS ===== */
-.project {
-    display: flex;
-    gap: 30px;
-    background: var(--card-bg);
-    padding: 25px;
-    border-radius: 20px;
-    margin-bottom: 35px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
-    align-items: center;
-}
+    <div class="project">
+        <img src="images/Customer revenue insights dashboard.png" alt="Revenue Insights">
+        <div class="project-content">
+            <h3>Customer Revenue Insights Dashboard</h3>
+            <p class="tech">Power BI</p>
+            <p>
+                Business intelligence dashboard analyzing revenue performance,
+                KPIs, profit contribution, and customer revenue trends.
+            </p>
+            <a href="https://github.com/Sophia-sagayanathan" target="_blank" class="btn">
+                View on GitHub
+            </a>
+        </div>
+    </div>
 
-.project img {
-    width: 260px;
-    border-radius: 12px;
-}
+    <div class="project">
+        <img src="images/netflix dashboard.png" alt="Netflix Dashboard">
+        <div class="project-content">
+            <h3>Netflix Content Analysis Dashboard</h3>
+            <p class="tech">Excel</p>
+            <p>
+                Excel-based interactive dashboard analyzing Netflix content
+                distribution, genre trends, and country-level insights using
+                pivot tables and advanced formulas.
+            </p>
+            <a href="https://github.com/Sophia-sagayanathan" target="_blank" class="btn">
+                View on GitHub
+            </a>
+        </div>
+    </div>
 
-.project-content .tech {
-    color: var(--accent);
-    font-weight: 500;
-}
+</section>
 
-.btn {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 12px 24px;
-    background: var(--accent);
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: 0.3s ease;
-}
+<section id="skills">
+    <h2>Technical Skills</h2>
 
-.btn:hover {
-    opacity: 0.85;
-}
+    <div class="skills-container">
 
-/* ===== SKILLS ===== */
-#skills {
-    background: var(--skills-bg);
-}
+        <div class="skill-category">
+            <h3>Programming & Querying</h3>
+            <p>Python, SQL</p>
+        </div>
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
+        <div class="skill-category">
+            <h3>Data Analysis & Processing</h3>
+            <p>Excel, Pandas, NumPy</p>
+        </div>
 
-.skill-category {
-    background: var(--card-bg);
-    padding: 30px;
-    border-radius: 20px;
-    border-left: 5px solid var(--accent);
-    transition: 0.3s ease;
-}
+        <div class="skill-category">
+            <h3>Data Visualization</h3>
+            <p>Power BI, Tableau</p>
+        </div>
 
-/* ===== CONTACT ===== */
-.contact {
-    text-align: center;
-}
+        <div class="skill-category">
+            <h3>Databases</h3>
+            <p>MySQL, MongoDB</p>
+        </div>
 
-/* ===== FOOTER ===== */
-footer {
-    text-align: center;
-    padding: 25px;
-    background: var(--footer-bg);
-    color: var(--footer-text);
-}
+        <div class="skill-category">
+            <h3>Machine Learning & Analytics</h3>
+            <p>Regression, Classification, Time Series Analysis</p>
+        </div>
 
-/* ===== TOGGLE BUTTON ===== */
-.theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: var(--card-bg);
-    border: 2px solid var(--accent);
-    padding: 8px 14px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    color: var(--text-color);
-}
+        <div class="skill-category">
+            <h3>Version Control</h3>
+            <p>Git, GitHub</p>
+        </div>
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    section {
-        padding: 70px 8%;
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: sophiasagai06@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/Sophia-sagayanathan" target="_blank">Sophia-sagayanathan</a></p>
+</section>
+
+<footer>
+    <p>© 2025 Sophia Sagayanathan</p>
+</footer>
+
+<script>
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+
+    if (currentTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("theme", "light");
+    } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark");
     }
-
-    .project {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .project img {
-        width: 100%;
-    }
-
-    .about {
-        margin: 40px 5%;
-        padding: 30px;
-    }
 }
+
+// Load saved theme
+window.onload = function() {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+    }
+};
+</script>
+</body>
+</html> 
