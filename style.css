@@ -67,17 +67,13 @@ header h1 {
 }
 
 /* ===== PROJECTS ===== */
-.projects {
-    padding-top: 20px;
-}
-
 .project {
     display: flex;
-    gap: 30px;
+    gap: 40px;              /* increased gap */
     background: #1e293b;
-    padding: 30px;
+    padding: 40px;          /* more padding */
     border-radius: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     border: 1px solid #334155;
     align-items: center;
     transition: 0.3s ease;
@@ -88,44 +84,20 @@ header h1 {
     border-color: #3b82f6;
 }
 
-/* FIXED IMAGE SPACING */
+/* WIDER IMAGE */
 .project img {
-    width: 260px;
-    height: 180px;
+    width: 320px;           /* increased width */
+    height: 220px;          /* better proportion */
     object-fit: cover;
-    border-radius: 14px;
+    border-radius: 16px;
     cursor: pointer;
     flex-shrink: 0;
-    padding: 5px;
     background: #0f172a;
 }
 
 .project-content {
     flex: 1;
 }
-
-.project-content .tech {
-    color: #60a5fa;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 10px 22px;
-    background: #3b82f6;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #2563eb;
-}
-
 /* ===== SKILLS ===== */
 #skills {
     padding-top: 30px;
