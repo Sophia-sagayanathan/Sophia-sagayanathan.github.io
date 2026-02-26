@@ -180,6 +180,107 @@ footer {
     background: #222;
     color: white;
 }
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #4a90e2;
+    font-weight: 500;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+    background: white;
+    margin: 60px 10%;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== PROJECTS SECTION ===== */
+.projects {
+    padding: 80px 10%;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project {
+    display: flex;
+    gap: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    align-items: center;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.project-content h3 {
+    margin-top: 0;
+}
+
+.project-content .tech {
+    color: #4a90e2;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #4a90e2;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #357abd;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.contact a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
 
 /* ===== ANIMATION ===== */
 @keyframes fadeInUp {
