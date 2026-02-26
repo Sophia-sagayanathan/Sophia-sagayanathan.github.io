@@ -69,14 +69,14 @@ header h1 {
 /* ===== PROJECTS ===== */
 .project {
     display: flex;
-    gap: 40px;              /* increased gap */
+    gap: 55px;                 /* More breathing space */
     background: #1e293b;
-    padding: 40px;          /* more padding */
-    border-radius: 18px;
-    margin-bottom: 35px;
+    padding: 50px;             /* Larger padding for premium feel */
+    border-radius: 22px;
+    margin-bottom: 45px;
     border: 1px solid #334155;
     align-items: center;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .project:hover {
@@ -84,20 +84,21 @@ header h1 {
     border-color: #3b82f6;
 }
 
-/* WIDER IMAGE */
+/* IMAGE TAKES PROPER WIDTH */
 .project img {
-    width: 320px;           /* increased width */
-    height: 220px;          /* better proportion */
+    width: 45%;                /* Now proportional */
+    height: 280px;             /* Taller for better presence */
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 18px;
     cursor: pointer;
     flex-shrink: 0;
-    background: #0f172a;
 }
 
+/* TEXT SIDE BALANCED */
 .project-content {
-    flex: 1;
+    width: 55%;
 }
+
 /* ===== SKILLS ===== */
 #skills {
     padding-top: 30px;
