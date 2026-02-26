@@ -7,8 +7,12 @@ body {
     line-height: 1.6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
-    padding: 70px 10%;
+    padding: 60px 10%;
 }
 
 h1, h2, h3 {
@@ -18,23 +22,27 @@ h1, h2, h3 {
 
 h2 {
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     position: relative;
+    display: inline-block;
 }
 
+/* Default left underline */
 h2::after {
     content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
     width: 60px;
     height: 3px;
     background: #3b82f6;
-    display: block;
-    margin-top: 8px;
+    border-radius: 2px;
 }
 
 /* ===== HEADER ===== */
 header {
     text-align: center;
-    padding: 90px 20px 40px;
+    padding: 100px 20px 50px;
     background: radial-gradient(circle at top, rgba(59,130,246,0.15), transparent 60%);
 }
 
@@ -51,26 +59,27 @@ header h1 {
 /* ===== ABOUT ===== */
 .about {
     max-width: 900px;
-    margin: 0 auto 50px;
+    margin: 0 auto 60px;
     background: #1e293b;
-    padding: 35px;
+    padding: 40px;
     border-radius: 16px;
     border: 1px solid #334155;
 }
 
 /* ===== PROJECTS ===== */
 .projects {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .project {
     display: flex;
-    gap: 25px;
+    gap: 30px;
     background: #1e293b;
-    padding: 20px;
-    border-radius: 16px;
-    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 30px;
     border: 1px solid #334155;
+    align-items: center;
     transition: 0.3s ease;
 }
 
@@ -79,27 +88,32 @@ header h1 {
     border-color: #3b82f6;
 }
 
+/* FIXED IMAGE SPACING */
 .project img {
-    width: 240px;
-    border-radius: 12px;
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
     cursor: pointer;
-    transition: 0.3s;
+    flex-shrink: 0;
+    padding: 5px;
+    background: #0f172a;
 }
 
-.project img:hover {
-    transform: scale(1.03);
+.project-content {
+    flex: 1;
 }
 
 .project-content .tech {
     color: #60a5fa;
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 12px;
+    padding: 10px 22px;
     background: #3b82f6;
     color: white;
     text-decoration: none;
@@ -114,21 +128,25 @@ header h1 {
 
 /* ===== SKILLS ===== */
 #skills {
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .skill-category {
     background: #1e293b;
-    padding: 18px;
-    border-radius: 12px;
+    padding: 20px;
+    border-radius: 14px;
     border: 1px solid #334155;
-    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.skill-category:hover {
+    border-color: #3b82f6;
 }
 
 .skill-category h3 {
@@ -139,13 +157,29 @@ header h1 {
 
 .skill-category p {
     margin: 0;
+    font-size: 14px;
     color: #cbd5e1;
 }
 
-/* ===== CONTACT ===== */
+/* ===== CONTACT (FIXED ALIGNMENT) ===== */
 .contact {
     text-align: center;
-    padding: 50px 10%;
+    padding: 60px 10%;
+}
+
+.contact h2 {
+    display: block;
+    text-align: center;
+}
+
+/* Center underline for contact only */
+.contact h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact p {
+    margin: 10px 0;
 }
 
 .contact a {
@@ -160,15 +194,10 @@ header h1 {
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
-    padding: 18px;
+    padding: 20px;
     background: #0b1220;
     font-size: 13px;
     margin: 0;
-}
-
-/* Remove extra space */
-html, body {
-    overflow-x: hidden;
 }
 
 /* ===== IMAGE MODAL ===== */
@@ -188,7 +217,8 @@ html, body {
     display: block;
     margin: auto;
     max-width: 80%;
-    border-radius: 12px;
+    max-height: 80vh;
+    border-radius: 14px;
 }
 
 .modal-close {
@@ -196,12 +226,13 @@ html, body {
     top: 20px;
     right: 40px;
     color: white;
-    font-size: 28px;
+    font-size: 30px;
     cursor: pointer;
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+
     section {
         padding: 50px 8%;
     }
@@ -213,5 +244,6 @@ html, body {
 
     .project img {
         width: 100%;
+        height: auto;
     }
 }
