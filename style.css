@@ -207,18 +207,26 @@ footer {
 @media (max-width: 768px) {
 
     section {
-        padding: 50px 8%;
+        padding: 40px 5%;   /* reduced side spacing */
     }
 
     .project {
         flex-direction: column;
-        text-align: center;
+        text-align: left;   /* better readability */
+        padding: 25px;      /* reduced inner spacing */
+        gap: 20px;
     }
 
     .project img {
         width: 100%;
         height: auto;
+        margin-bottom: 10px;
     }
+
+    .project-content {
+        width: 100%;
+    }
+
 }
 
 /* ===== DESCRIPTION SWITCH (Desktop vs Mobile) ===== */
