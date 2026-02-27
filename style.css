@@ -220,3 +220,23 @@ footer {
         height: auto;
     }
 }
+
+/* ===== DESCRIPTION SWITCH (Desktop vs Mobile) ===== */
+
+/* By default → hide mobile version */
+.mobile-desc {
+    display: none;
+}
+
+/* On mobile → show short version only */
+@media (max-width: 768px) {
+
+    .desktop-desc {
+        display: none;
+    }
+
+    .mobile-desc {
+        display: block;
+    }
+
+}
